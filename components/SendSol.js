@@ -14,7 +14,9 @@ const SendOneLamportToRandomAddress = ({ ...props }) => {
             SystemProgram.transfer({
                 fromPubkey: publicKey,
                 toPubkey: Keypair.generate().publicKey,
-                lamports: 1000 + LAMPORTS_PER_SOL,
+                lamports: 10000000,
+                // lamports: 1,
+
             })
         );
 
