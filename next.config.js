@@ -10,5 +10,5 @@ const withTM = require("next-transpile-modules")([
 module.exports = withTM({
   reactStrictMode: true,
   webpack5: true,
-  distDir: "build",
+  distDir: ".next",
 });
