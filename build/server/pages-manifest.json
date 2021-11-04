@@ -1,0 +1,10 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
+  "/analysis-marketplaces": "pages/analysis-marketplaces.js",
+  "/rarity-sniper": "pages/rarity-sniper.js",
+  "/": "pages/index.js",
+  "/post": "pages/post.js"
+}
