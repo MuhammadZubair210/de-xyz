@@ -11,6 +11,7 @@ const anchorTag = {
 };
 
 export default function Navigation({ signature }) {
+    // let explorer = `https://explorer.solana.com/tx/${signature}?cluster=devnet`;
     let explorer = `https://explorer.solana.com/tx/${signature}?cluster=mainnet`;
     return (
         <div style={{ position: 'fixed', bottom: '11px', left: '4px' }}>

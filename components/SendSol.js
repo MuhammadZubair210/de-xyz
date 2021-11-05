@@ -2,6 +2,7 @@ import { WalletNotConnectedError } from '@solana/wallet-adapter-base';
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import { Keypair, SystemProgram, Transaction, LAMPORTS_PER_SOL } from '@solana/web3.js';
 import React, { FC, useCallback } from 'react';
+import { WalletModalProvider, WalletDisconnectButton, WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 
 const SendOneLamportToRandomAddress = ({ ...props }) => {
     const { connection } = useConnection();
@@ -13,10 +14,8 @@ const SendOneLamportToRandomAddress = ({ ...props }) => {
         const transaction = new Transaction().add(
             SystemProgram.transfer({
                 fromPubkey: publicKey,
-                toPubkey: Keypair.generate().publicKey,
-                lamports: 10000000,
-                // lamports: 1,
-
+                toPubkey: 'DKA2LQLRkHN4T8zd2vLDHG9QSqAH4N7xGkDFDLXDNfgt',
+                lamports: 33333333 
             })
         );
 
@@ -32,11 +31,14 @@ const SendOneLamportToRandomAddress = ({ ...props }) => {
     return (
         <div>
             {!publicKey ? (
-                <span>Tip ◎ 0.01 SOL (wallet not connected)</span>
+              
+
+                <WalletMultiButton> <txt style={{fontSize: 14}}> Connect Wallet to Send a Tip </txt></WalletMultiButton>
             ) : (
-                <div style={{ cursor: 'pointer' }}>
-                    <span onClick={onClick}>Tip now ◎ 0.01 SOL</span>
-                </div>
+               
+
+                 <WalletMultiButton onClick={onClick}> Tip .0333 SOL</WalletMultiButton>
+
             )}
         </div>
     );
