@@ -21,7 +21,7 @@ export default function Navigation() {
         const transaction = new Transaction().add(
             SystemProgram.transfer({
                 fromPubkey: publicKey,
-                toPubkey: 'DKA2LQLRkHN4T8zd2vLDHG9QSqAH4N7xGkDFDLXDNfgt',
+                toPubkey: 'FGd5EVPuLiEsyYrwYKUnhUYob6grJvtAuYQS2tdbM3SW',
                 lamports: 33300000,
             })
         );
