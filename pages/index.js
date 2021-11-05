@@ -2,16 +2,15 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Navbar from '../components/Navbar';
-import SendSol from '../components/SendSol';
 
 import Link from 'next/link';
 
 export default function Home() {
     return (
         <div>
+            <div className={styles.navdiv}>
             <Navbar></Navbar>
-
-
+            </div>
             <div className={styles.container}>
                 <Head>
                     <title>by DeGods</title>
@@ -20,98 +19,123 @@ export default function Home() {
                 </Head>
 
                 <main className={styles.main}>
-                    <Image src="/dexyz.png" alt="logo" height={120} width={413} />
-
+                    <Image src="/dexyz.png" alt="logo" height={100} width={300} objectFit="contain" />
+                   
                     <p className={styles.description}>Solana NFT resources from the biggest brains in the metaverse.</p>
 
                     <div className={styles.grid}>
-                        <Link href="/post" className={styles.card}>
-                            <a className={styles.card}>
-                                <Image src="/understanding_solscan.png" alt="logo" height={300} width={300} />
-                                <div>
-                                    <h2 style={{ textAlign: 'left' }}>How to Read the Solana Blockchain</h2>
-                                    <p>Written by @degods123</p>
-                                </div>
+                        <Link href="/post">
+                            <a className={styles.imagecard}>
+
+                                
+                               
+                                <Image src="/comingsoon/navigating.png" alt="logo" height={290} width={290} objectFit="contain" />
+                                <h2 className={styles.postheading}>How to Read the Solana Blockchain</h2>
+                              
+                            </a>
+                        </Link>
+                     
+                        <Link href="/" >
+                     
+                            <a className={styles.imagecard}>
+                           
+                            <Image src="/comingsoon/unicorn.png" alt="logo" height={290} width={290} objectFit="contain" />
+
+                                <h2 className={styles.postheading}>Rarity Sniper Discord Bot</h2>
+                               
+                               
                             </a>
                         </Link>
 
-                        <Link href="/rarity-sniper" className={styles.card}>
-                            <a className={styles.card}>
-                                <Image src="/rarity_sniper.png" alt="logo" height={300} width={300} />
-                                <h2>Rarity Sniper Discord Bot</h2>
-                                <p>Written by @degods123</p>
+                        <Link href="/">
+                            <a className={styles.imagecard}>
+                           
+                            <Image src="/comingsoon/resources.png" alt="logo" height={290} width={290} objectFit="contain" />
+                                <h2 className={styles.postheading}>Useful SOL NFT resources </h2>
+                              
                             </a>
                         </Link>
 
-                        <Link href="/useful-resources" className={styles.card}>
-                            <a className={styles.card}>
-                                <Image src="/nft_resources.png" alt="logo" height={300} width={300} />
-                                <h2>Useful SOL NFT resources </h2>
-                                <p>Written by @degods123</p>
+                        <Link href="/" >
+                       
+                            <a className={styles.imagecard}>
+                           
+                            <Image src="/comingsoon/marketplace.png" alt="logo" height={290} width={290} objectFit="contain" />
+                                <h2 className={styles.postheading}>Analysis of Solana NFT Marketplaces</h2>
+                            
                             </a>
                         </Link>
 
-                        <Link href="/analysis-marketplaces" className={styles.card}>
-                            <a className={styles.card}>
-                                <Image src="/understanding_marketplaces.png" alt="logo" height={300} width={300} />
-                                <h2>Analysis of Solana NFT Marketplaces</h2>
-                                <p>Written by @degods123</p>
+                        <Link href="/" >
+                    
+                            <a className={styles.imagecard}>
+                           
+                            <Image src="/comingsoon/candymachine.png" alt="logo" height={290} width={290} objectFit="contain" />
+                                <h2 className={styles.postheading}>How to Use Candy Machine</h2>
+                               
+                              
                             </a>
                         </Link>
-
-                        <Link href="/candy-machine" className={styles.card}>
-                            <a className={styles.card}>
-                                <Image src="/arweave_candymachine.png" alt="logo" height={300} width={300} />
-                                <h2>How to Use Candy Machine & Arweave to Mint Your Own NFT Collection</h2>
-                                <p>Written by @degods123</p>
+                        <Link href="/" >
+                     
+                            <a className={styles.imagecard}>
+                           
+                            <Image src="/comingsoon/buy_nft.png" alt="logo" height={290} width={290} objectFit="contain" />
+                                <h2 className={styles.postheading}>How To Buy Solana NFTs for Dummies</h2>
+                          
                             </a>
                         </Link>
-                        <Link href="/how-to-buy" className={styles.card}>
-                            <a className={styles.card}>
-                                <Image src="/buying_nft_dummies.png" alt="logo" height={300} width={300} />
-                                <h2>YouTube Tutorial &quot;How To Buy Solana NFTs for Dummies&quot;</h2>
-                                <p>Written by @degods123</p>
+                        <Link href="/" >
+                      
+                            <a className={styles.imagecard}>
+                           
+                            <Image src="/comingsoon/mintingrare.png" alt="logo" height={290} width={290} objectFit="contain" />
+                                <h2 className={styles.postheading}>Tips on Increasing Chances to Mint a Hype Project</h2>
+                             
                             </a>
                         </Link>
-                        <Link href="/mint-hype" className={styles.card}>
-                            <a className={styles.card}>
-                                <Image src="/minting_mythic.png" alt="logo" height={300} width={300} />
-                                <h2>Tips on Increasing Chances to Mint a Hype Project</h2>
-                                <p>Written by @degods123</p>
+                        <Link href="/" >
+                       
+                            <a className={styles.imagecard}>
+                           
+                            <Image src="/comingsoon/attributes.png" alt="logo" height={290} width={290} objectFit="contain" />
+                                <h2 className={styles.postheading}>Understand Valuable Attributes Beyond Ranking</h2>
+                               
+                              
                             </a>
                         </Link>
-                        <Link href="/understanding-attributes" className={styles.card}>
-                            <a className={styles.card}>
-                                <Image src="/nonrare_attributes.png" alt="logo" height={300} width={300} />
-                                <h2>Understand Valuable Attributes Beyond Ranking</h2>
-                                <p>Written by @degods123</p>
+                        <Link href="/" >
+                      
+                            <a className={styles.imagecard}>
+                           
+                            <Image src="/comingsoon/arverse.png" alt="logo" height={290} width={290} objectFit="contain" />
+                                <h2 className={styles.postheading}>Creating Your Own Personal 3D AR Metaverse</h2>
+                              
+                              
                             </a>
                         </Link>
-                        <Link href="/creating-metaverse" className={styles.card}>
-                            <a className={styles.card}>
-                                <Image src="/arverse.png" alt="logo" height={300} width={300} />
-                                <h2>Creating Your Own Personal 3D AR Metaverse</h2>
-                                <p>Written by @degods123</p>
-                            </a>
-                        </Link>
-                        <Link href="/floor-vs-rares" className={styles.card}>
-                            <a className={styles.card}>
-                                <Image src="/rarity_vs_floor.png" alt="logo" height={300} width={300} />
-                                <h2>Analysis on Buying Floors vs. Rares</h2>
-                                <p>Written by @degods123</p>
+                        <Link href="/" >
+                     
+                            <a className={styles.imagecard}>
+                           
+                            <Image src="/comingsoon/commonvsrare.png" alt="logo" height={290} width={290} objectFit="contain" />
+                                <h2 className={styles.postheading}>Analysis on Buying Floors vs. Rares</h2>
+                             
+                               
                             </a>
                         </Link>
                     </div>
                 </main>
 
                 <footer className={styles.footer}>
-                    <Link
-                        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                <a
+                    style={{ color: '#000', textDecoration: 'none'}}
+                        href="https://degods.com"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         Powered by DeGods
-                    </Link>
+                    </a>
                 </footer>
             </div>
         </div>

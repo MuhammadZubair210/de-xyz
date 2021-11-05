@@ -5,7 +5,7 @@
       "static/chunks/node_modules_next_dist_client_dev_noop_js.js"
     ]
   },
-  "_app.js -> ../components/WalletConnectionProvider": {
+  "_app.tsx -> ../components/WalletConnectionProvider": {
     "id": "./components/WalletConnectionProvider.js",
     "files": [
       "static/chunks/components_WalletConnectionProvider_js.js"
